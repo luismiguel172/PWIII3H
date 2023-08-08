@@ -8,7 +8,7 @@
 
     }else{
 
-        $sql = "SELECT * FROM dbPesssoas ";
+        $sql = "SELECT * FROM dbPessoas ";
 
         $resultado = mysqli_query($con,$sql);
 
