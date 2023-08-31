@@ -13,7 +13,14 @@
         {
             $acelerar = 0;
             $acelerar2 = $acelerar + 5;
-            print "Acelerar: " .$this->acelerar2 ."<br>";
+
+            return $acelerar2;
+            
+        }
+
+        function ImprimirAcelerar()
+        {
+            print "Aceleração: " .$this->acelerar2 ."<br>";
         }
 
         function InformarCor()

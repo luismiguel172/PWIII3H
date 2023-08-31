@@ -13,5 +13,6 @@
 
     $carro1->InformarCor();
     $carro1->Acelerar();
+    $carro1->ImprimirAcelerar();
 
 ?>    
