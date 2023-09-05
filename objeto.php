@@ -1,16 +1,22 @@
 <?php
 
-    include_once "produto.php";
+    include_once 'pessoa.php';
+    include_once 'conta.php';
 
-    $valor1 = new Produto();
-    $valor2 = new Produto();
+    $carlos = new Pessoa;
+    $carlos->Codigo = 10;
+    $carlos->Nome = "Carlos da Silva";
+    $carlos->Altura = 1.85;
+    $carlos->Idade = 25;
+    $carlos->Nascimento = "10/04/1976";
+    $carlos->Escolaridade = "Ensino Médio";
 
-    $valor1->Codigo = 4011;
-    $valor1->Descricao = "Cd the best of Imagine Dragons";
+    echo "Manipulando o objeto $carlos->Nome <br> <br>";
+    echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} <br>";
 
-    $valor2->Codigo = 4012;
-    $valor2->Descricao = "Cd the best of ColdPlay";
-
-    $valor1->ImprimiEtiqueta();
-    $valor2->ImprimiEtiqueta();
-?>
+    $carlos->Formar("Técnico em Eletricidade");
+    echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} <br>";
+    echo "{$carlos->Nome} possui {$carlos->Idade} anos <br>" ;
+    
+    $carlos->envelhecer(1);
+    echo "{$carlos->Nome} possui {$carlos->Idade} anos <br>";

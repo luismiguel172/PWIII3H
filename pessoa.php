@@ -12,13 +12,13 @@
 
         function crescer($centimentros)
         {
-            if($centimentros->0)
+            if($centimentros > 0)
             {
                 $this->$altura += $centimentros;
             }
         }
 
-        function formar($titulacao)
+        function Formar($titulacao)
         {
             $this->escolaridade = $titulacao;
         }
