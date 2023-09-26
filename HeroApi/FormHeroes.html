@@ -13,11 +13,11 @@
 
     <div class="Principal">
 
-        <h1>Registre seu Herói</h1>
+        <h1 id="Registro">Registre seu Herói</h1>
 
         <div class="FormsInputs">
 
-            <form action="http://localhost/HeroApi/v1/Api.php?apicall=createhero" method="post">
+            <form action="http://localhost/PWIII3H/HeroApi/v1/Api.php?apicall=createhero" method="post">
 
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="name">
@@ -39,14 +39,32 @@
             <label for="floatingInput">Team Affiliation</label>
 
             <button type="submit" class="btn btn-dark">Enviar</button>
+          </div>  
 
         </form>
 
-        </div>
-
-          </div>
+      </div>
 
     </div>
+
+    <div class="ListaHerois">
+      
+      <h1 id="Lista">Lista de Herois</h1>
+
+      <form action="http://localhost/PWIII3H/HeroApi/v1/Api.php?apicall=getheroes" method="get">
+        <table>
+          <th>Name</th>
+          <th>Real Name</th>
+          <th>Rating</th>
+          <th>Team Affiliantion</th>
+
+          <tbody><p></tbody>
+        </table>
+      </form>
+
+    </div>
+
+    
     
 </body>
 </html>
