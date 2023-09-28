@@ -106,9 +106,9 @@
 			case 'deletehero':
 
 				
-				if(isset($_GET['id'])){
+				if(isset($_POST['id'])){
 					$db = new DbOperation();
-					if($db->deleteHero($_GET['id'])){
+					if($db->deleteHero($_POST['id'])){
 						$response['error'] = false; 
 						$response['message'] = 'Herói excluído com sucesso';
 						$response['heroes'] = $db->getHeroes();
