@@ -9,10 +9,6 @@ body{
     margin-right: 60rem;
 }
 
-.Principal{
-
-}
-
 .RegistroHerois{
   display: flex;
   flex-direction: column;

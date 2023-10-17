@@ -7,4 +7,4 @@
 
     $pedrinho->SetSalario(248);
 
-    echo 'O Salário do Pedrinho é R$: ' . $pedrinho->getSalario()
+    echo 'O Salário do Pedrinho é R$: ' . $pedrinho->GetSalario()
