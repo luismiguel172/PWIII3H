@@ -10,7 +10,7 @@
 
     }else{
 
-      $sql = "CREATE DATABASE db_2HPW2";
+      $sql = "CREATE DATABASE db3HPW3";
 
         if(mysqli_query($con,$sql)){
             echo "<br/> Base de Dados criada com sucesso!! ";
