@@ -1,0 +1,24 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+body{
+    margin-inline: 25rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+p{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+}
