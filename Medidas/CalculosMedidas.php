@@ -1,6 +1,6 @@
 <?php
 
-    class Medidas{
+    Class Medidas{
 
         public float $Numero;
         public string $MedidaAtual;
@@ -12,13 +12,13 @@
             $this->Numero = $Numero;
             $this->MedidaAtual = $MedidaAtual;
             $this->MedidaPosterior = $MedidaPosterior;
-            $this->CalcularMedida();   
+            $this->CalcularMedida();
         }
 
         function __constructRes($Resultado)
         {
             $this->Resultado = $Resultado;
-            $this->Resultado = CalcularMedida();   
+            $this->Resultado = CalcularMedida();
         }
 
         private function CalcularMedida() {
@@ -36,21 +36,21 @@
                         case "cm": return $this->Numero * 100000; break;
                         case "mm": return $this->Numero * 1000000; break;
                         default: return $this->Numero; break;
-                    } break; 
+                    } break;
                 case "cm":
                     switch($this->MedidaPosterior){
                         case "km": return $this->Numero / 100000; break;
                         case "m": return $this->Numero / 100; break;
                         case "mm": return $this->Numero * 10; break;
                         default: return $this->Numero; break;
-                    } break; 
+                    } break;
                 case "mm":
                     switch($this->MedidaPosterior){
                         case "km": return $this->Numero / 1000000; break;
                         case "m": return $this->Numero / 100; break;
                         case "cm": return $this->Numero / 10; break;
                         default: return $this->Numero; break;
-                    } break;       
+                    } break;
             }
         }
 

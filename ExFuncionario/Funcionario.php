@@ -8,11 +8,7 @@
         protected $salario;
 
         function setCodigo($codigo){
-
-            if(is_numeric($codigo)&&($codigo > 0))
-            {
                 $this->codigo = $codigo;
-            }
         }
 
         function getCodigo(){
@@ -22,11 +18,7 @@
                 ##########
 
         function setNome($nome){
-
-            if(is_string($nome)&&($nome > 0))
-            {
                 $this->nome = $nome;
-            }
         }
 
         function getNome(){
@@ -36,11 +28,7 @@
                 ######
 
         function setNascimento($nascimento){
-
-            if(is_numeric($nascimento)&&($nascimento > 0))
-                {
                     $this->nascimento = $nascimento;
-                }
             }
         
         function getNascimento(){

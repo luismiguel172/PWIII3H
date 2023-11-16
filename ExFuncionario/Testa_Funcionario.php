@@ -2,16 +2,16 @@
 
     include_once 'Funcionario.php';
 
-    $pedro = new Funcionario();
+    $funcionario = new Funcionario();
 
-    $pedro->setCodigo();
-    $pedro->setNome();
-    $pedro->setNascimento();
-    $pedro->setSalario();
+    $funcionario->setCodigo($_POST['codigo']);
+    $funcionario->setNome($_POST['nome']);
+    $funcionario->setNascimento($_POST['nascimento']);
+    $funcionario->setSalario($_POST['salario']);
 
-    echo 'Código: '.$pedro->getCodigo();
-    echo 'Nome: '.$pedro->getNome();
-    echo 'Nascimento: '.$pedro->getNascimento();
-    echo 'Salário: R$ '.$pedro->getSalario();
+    echo 'Código: '.$funcionario->getCodigo() ;
+    echo '<br> Nome: '.$funcionario->getNome();
+    echo '<br> Nascimento: '.$funcionario->getNascimento();
+    echo '<br> Salário: R$ '.$funcionario->getSalario();
 
 ?>
